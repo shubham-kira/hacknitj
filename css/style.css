@@ -302,6 +302,71 @@ html {
   width: 60%;
 }
 
+.more-button a {
+    padding: 8px 38px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    outline: none;
+    border:2px solid #ffffff;
+    font-size: 15px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+}
+
+.hvr-bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: none;
+  color: #fff;
+}
+.hvr-bounce-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#317a9b;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom:hover,.hvr-bounce-to-bottom:focus,.hvr-bounce-to-bottom:active {
+  color: white;
+}
+.hvr-bounce-to-bottom:hover:before,.hvr-bounce-to-bottom:focus:before,.hvr-bounce-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+ul.nav.navbar-nav .hvr-bounce-to-bottom:before {
+    background: #fdae38;
+}
+.hvr-bounce-to-bottom.active {
+    background: #fdae38;
+}
+
 .ourWork .work-section h4 {
   margin: 0;
   padding: 0;
@@ -771,15 +836,15 @@ html {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
 }
 
-.testimonials .client-section .clients {
+.testimonials .client-section .clients  {
   border: 1px solid #333945;
   border-radius: 8px;
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -787,7 +852,7 @@ html {
   position: relative;
 }
 
-.testimonials .client-section .clients .clientInfo {
+.testimonials .client-section .clients .clientInfo  {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -798,7 +863,7 @@ html {
   display: none;
 }
 
-.testimonials .client-section .clients .clientInfo p {
+.testimonials .client-section .clients .clientInfo  p {
   margin: 0;
   padding-top: 30%;
 }
@@ -809,7 +874,7 @@ html {
   color: white;
 }
 
-.testimonials .client-section .clients .clientName {
+.testimonials .client-section .clients .clientName  {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -824,7 +889,7 @@ html {
   margin: 10px;
 }
 
-.testimonials .client-section .clients .clientName h5 {
+.testimonials .client-section .clients  .clientName h5 {
   margin: 10px auto;
   color: white;
 }
@@ -834,6 +899,68 @@ html {
 }
 
 .testimonials .client-section .clients:hover .clientName {
+  display: none;
+}
+
+.testimonials .client-section .core {
+  border: 1px solid #333945;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0a79df;
+  position: relative;
+}
+
+.testimonials .client-section .core .clientInfo  {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Diamond-Sunset.svg");
+  text-align: center;
+  border-radius: 6px;
+  display: none;
+}
+
+.testimonials .client-section .core .clientInfo p {
+  margin: 0;
+  padding-top: 30%;
+}
+
+.testimonials .client-section .core .clientInfo  a {
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+}
+
+.testimonials .client-section .core .clientName  {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #333945;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.testimonials .client-section .core .clientName h4 {
+  margin: 10px;
+}
+
+.testimonials .client-section .core .clientName h5 {
+  margin: 10px auto;
+  color: white;
+}
+
+.testimonials .client-section .core:hover .clientInfo {
+  display: block;
+}
+
+.testimonials .client-section .core:hover .clientName {
   display: none;
 }
 
@@ -874,6 +1001,76 @@ html {
 
 .testimonials .client-section .clients:nth-of-type(6) {
   background-image: url("../images/person6.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .clients:nth-of-type(7) {
+  background-image: url("../images/person6.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .clients:nth-of-type(8) {
+  background-image: url("../images/person6.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .core:nth-of-type(1) {
+  background-image: url("../images/core1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .core:nth-of-type(2) {
+  background-image: url("../images/core2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .core:nth-of-type(3) {
+  background-image: url("../images/core3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .core:nth-of-type(4) {
+  background-image: url("../images/core4.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .core:nth-of-type(5) {
+  background-image: url("../images/core5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .core:nth-of-type(6) {
+  background-image: url("../images/core6.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .core:nth-of-type(7) {
+  background-image: url("../images/core7.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.testimonials .client-section .core:nth-of-type(8) {
+  background-image: url("../images/core8.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
