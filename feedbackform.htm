@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Feedback Form</title>
+    
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" type="text/css" href="./css/feedbackform.css">
+  </head>
+	<body>
+    <div id="id01" class="feedback">
+      
+      <form action="php/feedbackformprocess.php" class="form-feed">
+        <div class="feed-fields">
+          <h2>Inquiry and Feedback Form</h2>
+          <p>Fields mark with asterisk(<span class="required_star"> * </span>) are mandatory</p>
+          <hr>
+          <label for="Name" class="feed-label">Name<span class="required_star"> * </span></label>
+          <input class="feedback_text" type="text" name="Name" id="Name" maxlength="100" placeholder="Enter name">
+
+
+          <label for="Email">Email<span class="required_star"> * </span></label>
+          <input class="feedback_textbig" type="text" name="Email" id="Email" maxlength="100" placeholder="Enter Email">
+
+          <label for="Subject">Subject<span class="required_star"> * </span></label>
+          <input class="feedback_text" type="text" name="Subject" id="Subject" maxlength="50" placeholder = "Inquiry/Feedback">
+
+          <label for="Message">Message<span class="required_star"> * </span></label>
+          <textarea class="feedback_textarea" name="Message" id="Message" maxlength="1000" onKeyUp="checkMessageCount()" placeholder="Type your Message"></textarea>
+
+          <div class="clearfix">           
+            <input type="submit" value="Submit" id="form_submit_button" class="feedback_button">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('mouseup',function(event){
+  var box = document.getElementById('id01');
+  var boxParent = event.target.parentNode.parentNode.parentNode;
+  if(event.target!=box && boxParent!=box){
+    box.style.display='none';
+  }
+})
+
+  </script>
+  </body>
+</html>

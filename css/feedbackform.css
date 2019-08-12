@@ -1,0 +1,111 @@
+
+html,body {
+	max-width: 100%;
+	overflow-x: hidden;
+	margin:0;
+	padding: 0;
+	overflow-y: visible;
+	font-family:"Montserrat",sans-serif;
+	scroll-behavior: smooth;
+}
+.feedback{
+	width: 100%;
+	margin: 0;
+	background-image: url("../images/helloquence-51716-unsplash.jpg");
+  background-size: cover;
+  background-color: #333;
+	/* padding-bottom: 100px; */
+}
+.feedback form{	
+	width: 100%;
+	padding: 5% 0 ;
+}
+.feed-fields{
+  margin-left:12.51%;
+  margin-right: auto;
+  
+  padding:5% 2.7% 5%;
+  background: #0a78dfc2;
+  width: 70%;
+  height: max-content;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(56, 55, 55, 0.829);
+  
+  overflow: hidden;
+}
+
+.feed-fields h2{
+	text-align: center;
+	margin: 0px;
+	color:rgb(237, 241, 245);
+	margin-top: 0;
+	font-size: 25px;
+}
+.feed-fields p{
+	text-align: center;
+	font-size: 13px;
+	color: rgb(192, 197, 202);
+}
+.feed-fields .required_star{
+	color: rgb(216, 92, 92);
+	font-size: inherit;
+}
+.feed-fields label{
+	width: 300px;
+	color: rgb(237, 241, 245);
+	text-align: center;
+	padding-bottom: 20px;
+	
+}
+ .form-attr{
+	text-align: center;
+	width: 100%;
+	color: rgb(237, 241, 245);
+}
+input[type=text]{
+  width: 95%;
+  padding:15px 5px;
+  
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  background: #f1f1f1;
+  color: #000;
+  margin:10px 0 20px;
+}
+input[type=text]:focus{
+  background-color:#ddd;
+  outline: none;
+}
+.feedback_textarea{
+  width: 95%;
+  height: 100px;
+  padding:15px 5px;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  background: #f1f1f1;
+  color: #000;
+  margin:10px 0 20px;
+}
+.clearfix{
+  width: 95%;
+  padding: 15px 5px 15px 5px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.feedback_button{
+  font-family: "Montserrat",sans-serif;
+  font-size: 20px;
+  background-color: rgb(110, 235, 110);
+  border: none;
+  padding: 15px;
+  width: 95%;
+  border-radius: 4px;
+  color: rgb(53, 53, 44);
+}
+::placeholder{
+  font-family: "Montserrat",sans-serif;
+  text-align: center;
+}
