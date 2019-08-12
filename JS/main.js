@@ -51,4 +51,44 @@ $('#left-arrow').click(function(){
     }
 });
 
-
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    
+    if(scroll<50){
+       $(".topnav").css("background" , "#33394500");
+    }
+      else if (scroll<100) {
+        $(".topnav").css("background" , "#33394510");
+      }
+      else if (scroll<150) {
+        $(".topnav").css("background" , "#33394520");
+      }
+      else if (scroll<200) {
+        $(".topnav").css("background" , "#33394530");
+      }
+      else if (scroll<250) {
+        $(".topnav").css("background" , "#33394540");
+      }
+      else if (scroll<300) {
+        $(".topnav").css("background" , "#33394550");
+      }
+      else if (scroll<350) {
+        $(".topnav").css("background" , "#33394560");
+      }
+      else if (scroll<400) {
+        $(".topnav").css("background" , "#33394570");
+      }
+      else if (scroll<450) {
+        $(".topnav").css("background" , "#33394580");
+      }
+      else if (scroll<550) {
+        $(".topnav").css("background" , "#33394590");
+      }
+      else {
+        $(".topnav").css("transition", "background-color 200ms linear");
+          $(".topnav").css("background" , "#333945");      
+      }
+   
+  })
+})
