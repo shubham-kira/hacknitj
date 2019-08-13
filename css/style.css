@@ -298,17 +298,18 @@ html {
 
 .ourWork .work-section {
   padding: 0;
-  margin: 10%;
+  margin: 5%;
   width: 60%;
 }
 
 .more-button a {
-    padding: 8px 38px;
+    padding: 4px 38px;
     display: inline-block;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     outline: none;
-    border:2px solid #ffffff;
+    border:2px solid #000000;
+    border-radius: 15px;
     font-size: 15px;
     letter-spacing: .5px;
     text-transform: capitalize;
@@ -426,7 +427,7 @@ ul.nav.navbar-nav .hvr-bounce-to-bottom:before {
 
 .weDo {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   position: relative;
   overflow: hidden;
   padding-top: 40px;
@@ -443,6 +444,19 @@ ul.nav.navbar-nav .hvr-bounce-to-bottom:before {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.weDo .timeline-container {
+  position: absolute;
+  left: 0;
+  width: 45%;
+  height: 85%;
+  float: left;
+  background-image: url("../images/event_flow3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 
 .weDo .textDo {
   float: right;
